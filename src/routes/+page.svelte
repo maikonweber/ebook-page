@@ -15,7 +15,7 @@
   <!-- Open Graph (Facebook e redes sociais) -->
   <meta property="og:title" content="Ebook Ereção Duradoura - Seu Guia Completo para Controle e Potência">
   <meta property="og:description" content="Transforme sua vida sexual com o Ebook Ereção Duradoura. Aprenda técnicas comprovadas de controle e potência.">
-  <meta property="og:url" content="https://dev.muttercorp.com.br/ebook">
+  <meta property="og:url" content="https://erecaoduradoura.com.br">
   <meta property="og:image" content="./logo_new-preview.png">
   <meta property="og:type" content="website">
 
@@ -184,14 +184,14 @@ onMount(() => {
       <h2>Disponível Agora!</h2>
       <img src="./jeff-tumale-lov_Iroo2N8-unsplash.jpg" alt="Ebook Cover" class="ebook-cover" />
       <div class="price-tag">
-        <span class="original-price">R$ 99,00</span>
-        <span class="current-price">R$ 35,00</span>
+        <span class="original-price">R$ 120,99</span>
+        <span class="current-price">R$ 49,69</span>
       </div>
       <ul class="benefits">
         <li>✓ Acesso imediato ao conteúdo</li>
         <li>✓ Garantia de 30 dias</li>
       </ul>
-      <a href="https://pay.kirvano.com/5ac5007d-8c52-408b-9419-a29acdbd1e4c" class="purchase-button">
+      <a href="https://pay.kirvano.com/22eb9534-8479-4dd9-9bb8-a6318fd87d02" class="purchase-button">
         Comprar Agora
         <span class="arrow">→</span>
       </a>
