@@ -1,22 +1,24 @@
 <script>
-import "../app.css";
-/** @type {{children?: import('svelte').Snippet}} */
-let { children } = $props();
+    import "../app.css";
+    import { injectAnalytics } from '@vercel/analytics/sveltekit';
+    
+    injectAnalytics();
 
+    // Define `children` as a prop
+    export let children;
 </script>
 
 <main>
-	{@render children?.()}
+    {#if children}
+        {children()}
+    {/if}
 </main>
 
-
-
-
 <style>
-	:global(body) {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-		font-family: Arial, sans-serif;
-	}
+    :global(body) {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
 </style>
