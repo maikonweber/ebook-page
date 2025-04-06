@@ -1,20 +1,16 @@
 <script>
 import "../app.css";
+import 'flowbite-svelte';
 /** @type {{children?: import('svelte').Snippet}} */
-let { children } = $props();
 import { injectAnalytics } from '@vercel/analytics/sveltekit'
 
 injectAnalytics()
 
-
 </script>
 
 <main>
-	{@render children?.()}
+	<slot />
 </main>
-
-
-
 
 <style>
 	:global(body) {

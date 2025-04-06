@@ -1,0 +1,244 @@
+/* Estilos globais */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #2a1b3d;
+  color: white;
+  min-height: 100vh;
+}
+
+/* Overlay e fundo */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #2a1b3d, #44318d);
+  opacity: 0.9;
+  z-index: -1;
+}
+
+/* Tipografia */
+h1 {
+  font-size: 3.5rem;
+  color: #ff6b6b;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  color: #ffd93d;
+  margin-bottom: 3rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Layout principal */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+/* Contador regressivo */
+.countdown-container {
+  margin: 3rem 0;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.countdown-title {
+  font-size: 1.5rem;
+  color: #ffd93d;
+  margin-bottom: 1rem;
+}
+
+.countdown-item {
+  background: rgba(255, 107, 107, 0.2);
+  padding: 1.5rem;
+  border-radius: 12px;
+  min-width: 120px;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.2);
+  border: 1px solid rgba(255, 107, 107, 0.3);
+}
+
+.countdown-item span {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff6b6b;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Cards e elementos interativos */
+.purchase-card {
+  background: rgba(255, 107, 107, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2.5rem;
+  max-width: 450px;
+  margin: 2rem auto;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(255, 107, 107, 0.2);
+  border: 1px solid rgba(255, 107, 107, 0.3);
+}
+
+.feature-card, .chapter-card, .testimonial-card {
+  background: rgba(255, 107, 107, 0.1);
+  padding: 2.5rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 107, 107, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover, .chapter-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Botões e links */
+.purchase-button {
+  background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+  color: white;
+  padding: 1.2rem 2.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.purchase-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+  background: linear-gradient(45deg, #ff8e8e, #ff6b6b);
+}
+
+/* Formulários */
+.subscription-form {
+  background: rgba(255, 107, 107, 0.1);
+  padding: 2.5rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  max-width: 600px;
+  margin: 3rem auto;
+  border: 1px solid rgba(255, 107, 107, 0.2);
+}
+
+input {
+  flex: 1;
+  padding: 1rem;
+  border: 2px solid rgba(255, 107, 107, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1.1rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+  background: linear-gradient(45deg, #ff8e8e, #ff6b6b);
+}
+
+/* Grids e layouts responsivos */
+.features-grid, .chapters-grid, .testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate-slide-down {
+  animation: slideDown 1s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 1s ease-out;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .countdown {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .countdown-item {
+    min-width: 80px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    order: -1;
+  }
+
+  .features-grid,
+  .chapters-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+} 

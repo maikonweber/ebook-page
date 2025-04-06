@@ -1,38 +1,75 @@
-# create-svelte
+# Ereção Duradoura - Landing Page
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Landing page moderna e responsiva para o ebook "Ereção Duradoura", desenvolvida com SvelteKit e Tailwind CSS.
 
-## Creating a project
+## 🚀 Tecnologias
 
-If you're seeing this, you've probably already done this step. Congrats!
+- [SvelteKit](https://kit.svelte.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [PostCSS](https://postcss.org/)
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
 
+## 📦 Instalação
+
+1. Clone o repositório:
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+git clone https://github.com/seu-usuario/erecao-duradoura.git
+cd erecao-duradoura
 ```
 
-## Developing
+2. Instale as dependências:
+```bash
+npm install
+```
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
+3. Inicie o servidor de desenvolvimento:
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+## 🛠️ Scripts Disponíveis
 
-To create a production version of your app:
+- `npm run dev` - Inicia o servidor de desenvolvimento
+- `npm run build` - Gera a versão de produção
+- `npm run preview` - Previsualiza a versão de produção
+- `npm run check` - Verifica erros de TypeScript
+- `npm run lint` - Verifica erros de linting
+- `npm run format` - Formata o código
 
-```bash
-npm run build
+## 📝 Estrutura do Projeto
+
+```
+erecao-duradoura/
+├── src/
+│   ├── components/     # Componentes reutilizáveis
+│   ├── lib/           # Utilitários e funções auxiliares
+│   ├── routes/        # Páginas e rotas
+│   └── styles/        # Estilos globais
+├── static/            # Arquivos estáticos
+├── tests/             # Testes
+└── public/            # Arquivos públicos
 ```
 
-You can preview the production build with `npm run preview`.
+## 🔧 Configuração
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- `svelte.config.js` - Configuração do SvelteKit
+- `vite.config.js` - Configuração do Vite
+- `tailwind.config.cjs` - Configuração do Tailwind CSS
+- `postcss.config.cjs` - Configuração do PostCSS
+- `tsconfig.json` - Configuração do TypeScript
+- `.eslintrc.cjs` - Configuração do ESLint
+- `.prettierrc` - Configuração do Prettier
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👥 Contribuição
+
+Contribuições são bem-vindas! Por favor, leia o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) para mais detalhes.
+
+## 📞 Suporte
+
+Para suporte, envie um email para suporte@erecaoduradoura.com.br
