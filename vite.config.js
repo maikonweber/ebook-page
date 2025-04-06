@@ -5,7 +5,7 @@ export default defineConfig({
 	plugins: [sveltekit()],
 	build: {
 		target: 'esnext',
-		minify: 'terser',
+		minify: 'esbuild',
 		sourcemap: true
 	},
 	server: {
